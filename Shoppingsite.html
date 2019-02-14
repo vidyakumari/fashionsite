@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>fbb</title>
+    </head>
+    <body>
+        <div id="header">
+        <img id="image"src="fbb.jpg" alt="Image" height="100" width="200">
+        <span id="btn">
+        <input type="button" value="login">
+        <input type="button" value="Register"> 
+        </span>
+        <span id="cloth"><select>
+            <option selected>MENSWEAR</option>
+            <option>Shirt</option>
+            <option>T-shirt</option>
+             <option>Jeans</option>
+        </select></span>
+        <span id="cloth"><select>
+             <option selected>WOMENSWEAR</option>
+            <option>T-shirt</option>
+            <option>Jeans</option>
+            <option>Skirts</option>
+            <option>Dresses</option>
+        </select></span>
+        <span id="cloth"><select>
+            <option selected>CHILDWEAR</option>
+             <option>Shirt</option>
+             <option>T-shirt</option>
+             <option>Jeans</option>
+        </select></span>
+       
+        </div>
+        <div id="hero">
+        <img src="hero.jpg" alt="Image2" height="90%" width="100%" >
+        </div>
+        <div id="parent">
+            <div id="childone">
+                    <h2>Men's Special</h2>
+    
+                    <ul>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Shirt</a></li>
+                      <li><a href="#">T-shirt</a></li>
+                    </ul>  
+                    
+                    <h2>Women's Special</h2>
+                    
+                    <ul>
+                            <li><a href="#">Saree</a></li>
+                            <li><a href="#">Kurti</a></li>
+                            <li><a href="#">Tops</a></li>
+                        </ul> 
+            </div>
+        
+         <div id="childtwo">
+               <div class="first"><img src="vidya1.webp" alt="img3"><p>Rs.500</p></div>
+               <div class="sec"><img src="vidya2.webp" alt="img4"><p>Rs.500</p></div>
+               <div class="third"><img src="vidya3.webp" alt="img5"><p>Rs.500</p></div>
+               <div class="first"><img src="vidya4.webp" alt="img6"><p>Rs.500</p></div>
+               <div class="sec"><img src="vidya5.webp" alt="img7" ><p>Rs.500</p></div>
+               <div class="third"><img src="vidya6.webp" alt="img8"><p>Rs.500</p></div>
+               <div class="first"><img src="vidya7.webp" alt="img9"><p>Rs.500</p></div>
+               <div class="sec"><img src="vidya8.webp" alt="img10" ><p>Rs.500</p></div>
+               <div class="third"><img src="vidya9.webp" alt="img11"><p>Rs.500</p></div>
+        </div>
+    </div>
+        <footer>
+            <h2>Contact:www.fashionhub.in</h2>
+        </footer>
+        <style>
+            #header{
+                position: fixed;
+                height: 95px;
+                width: 100%;
+                color: white;
+                background-color: blue;
+                text-align: center;
+                z-index: 1;
+            }
+            #image{
+                float: left;
+            }.left {
+                left: 0;
+                 background-color: #111;
+             }
+            .right {
+                right: 0;
+                background-color: red;
+            }
+          
+            footer{
+                position:fixed;
+                height: 70px;
+                width: 100%;
+                color: white;
+                background-color: blue;
+                text-align: center;
+                bottom: 0;
+                color:black;
+            }
+            #btn{
+                background-color:burlywood;
+                float: right;
+
+            }
+            #cloth{
+                float: left;
+                text-align: center;
+                margin-top: 75px;
+                color: black;
+                font-size: 18px;
+                padding: 0px 17px;
+            }
+            #hero{
+                background-position: center;
+                padding-top: 105px;
+                background-size: cover;
+                position: relative;
+                height: 60%;
+
+            }
+            #parent{
+
+                height: 100%;   
+        display: flex;
+        justify-content: space-between;
+            }
+            #childone{
+        flex: 1;
+        overflow-y: auto;
+        flex-grow: 1;
+        background-color:gold;
+        padding-top: 10%;
+        height: 40vh;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 16%;
+        padding-bottom: 10%;
+
+    }
+    #childtwo{
+        flex: 3;
+        background-color: red;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        padding-bottom: 10%;
+        display: flex;
+        
+    }
+          
+    #first{
+                flex: 33.3%;
+                
+            }
+            #sec{
+                flex: 33.3%;
+              
+
+                
+            }
+            #third{
+                flex: 33.3%;
+               
+
+          
+
+            }
+            
+         </style>
+    </body>
+</html>
